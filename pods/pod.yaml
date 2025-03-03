@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  # data about the object
+  name: nginx #name of the pod which should be unique in a namespace
+  labels:
+    app: nginx #name of the overall application
+    tier: front-end
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+# kubectl run also creates a pod
